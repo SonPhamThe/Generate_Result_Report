@@ -18,14 +18,8 @@ Library             RPA.HTTP
 Library             RPA.JSON
 Library             DateTime
 
-Suite Teardown      Close All Browsers
-
-
 *** Variables ***
-${order_info}               ${EMPTY}
 ${global_product_info}      ${EMPTY}
-${color_product}            ${EMPTY}
-${size_product}             ${EMPTY}
 
 ${EXCEL_FILE_NAME}          data_magento.xlsx
 ${DIRECTORY_PATH}           ${CURDIR}
@@ -72,7 +66,7 @@ Create File Excel Data
 Save Infomation By Excel Files
     [Documentation]    Saves the information of each product along with the order number, color, and size into the Excel file
     [Arguments]    ${product}
-    
+
     ${row}=    Create Dictionary
     ...    Name=${product['name_product']}
     ...    Price=${product['price_product']}

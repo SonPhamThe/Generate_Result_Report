@@ -13,11 +13,11 @@ tasks:
       - tasks.robot
 arguments:
   input:
-    - name: file_input
+    - name: file_info_product
       type: File
       required: True
       defaultValue:
-      description: File input
+      description: File Infomation Product
   output:
     - name: file_output
       type: File
