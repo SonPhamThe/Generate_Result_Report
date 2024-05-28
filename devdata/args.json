@@ -12,7 +12,7 @@
         "description": "file_output ",
         "type": "File",
         "direction": "OUT",
-        "value": "C:\\Generate result report/data_magento.xlsx",
+        "value": "C:\\Generate Result Report/data_magento.xlsx",
         "required": true
     }
 }
