@@ -22,7 +22,7 @@ arguments:
       type: List
       required: True
       defaultValue:
-      description: File Infomation Product
+      description: Astralis
   output:
     - name: file_output
       type: File
