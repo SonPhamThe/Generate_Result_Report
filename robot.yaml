@@ -18,13 +18,17 @@ arguments:
       required: True
       defaultValue:
       description: File Infomation Product
+    - name: astralis
+      type: List
+      required: True
+      defaultValue:
+      description: File Infomation Product
   output:
     - name: file_output
       type: File
       required: True
       defaultValue:
       description: File output
-
 condaConfigFile: conda.yaml
 environmentConfigs:
   - environment_windows_amd64_freeze.yaml
