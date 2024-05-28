@@ -19,8 +19,6 @@ Library             RPA.JSON
 Library             DateTime
 
 *** Variables ***
-${global_product_info}      ${EMPTY}
-
 ${EXCEL_FILE_NAME}          data_magento.xlsx
 ${DIRECTORY_PATH}           ${CURDIR}
 
@@ -37,7 +35,7 @@ Convert Infomation Of Product To Excel File
     ...                This keyword takes a JSON file as input, reads the data,
     ...                and writes the information to a specified Excel file.
 
-    ${product_info}=    Get In Arg    file_input
+    ${product_info}=    Get In Arg    file_info_product
     ${product_info_value}=    Set Variable    ${product_info}[value]
     ${product_json}    Load JSON From File    ${product_info_value}
 

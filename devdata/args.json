@@ -1,7 +1,7 @@
 {
-    "file_input": {
-        "name": "file_input",
-        "description": "file_input ",
+    "file_info_product": {
+        "name": "file_info_product",
+        "description": "file_info_product ",
         "type": "File",
         "direction": "IN",
         "value": "c:\\Generate result report/data_magento.json",
